@@ -1,11 +1,17 @@
 {
-    "name": "Upcoming Toronto Concerts",
+    "name": "Tradingview Auto Place Orders",
     "version": "1.0.0",
-    "description": "This is an extension to look up concerts coming to Toronto",
+    "description": "Tradingview Auto Place Orders",
     "manifest_version": 3,
-    "author": "Tiffany J",
+    "author": "Luan Grabher",
     "action": {
         "default_popup": "index.html",
-        "default_title": "Upcoming Toronto Concerts"
-    }
+        "default_title": "Tradingview Auto Place Orders"
+    },    
+    "content_scripts": [
+        {
+            "matches": ["*://www.tradingview.com/chart/*"],
+            "js": ["pageScript.js"]
+        }
+    ]
 }
