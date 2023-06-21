@@ -1,3 +1,5 @@
+console.log("TradingView Auto Trader Script loading");
+
 //SELECTORS
 var alertSelector = 'div[data-qa-dialog-name="alert-fired"]',
   alertMessageSelector =
@@ -48,3 +50,4 @@ function main() {
 }
 
 setInterval(main, 500);
+console.log("TradingView Auto Trader Script loaded");

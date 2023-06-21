@@ -1,6 +1,6 @@
 {
     "name": "Tradingview Auto Place Orders",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Tradingview Auto Place Orders",
     "manifest_version": 3,
     "author": "Luan Grabher",
@@ -10,7 +10,7 @@
     },    
     "content_scripts": [
         {
-            "matches": ["*://www.tradingview.com/chart/*"],
+            "matches": ["https://www.tradingview.com/chart/*", "https://br.tradingview.com/chart/*"],
             "js": ["pageScript.js"]
         }
     ]

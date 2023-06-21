@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tradingview Auto Place Orders</title>
-</head>
+  </head>  
 
-<body>
+  <body>
     <div>
-        <h2>Tradingview Auto Place Orders</h2>
-        <p> In alert message use: <br>
-            "ticker: {{ticker}}
-            action: {{strategy.order.action}}
-            position: {{strategy.position_size}}"
-        </p>
+      <h2>Tradingview Auto Place Orders</h2>
+      <div>In alert message use: <br /><br /></div>
+
+      <span>
+        ticker: {{ticker}}<br>
+        action: {{strategy.order.action}}<br>        
+        position: {{strategy.position_size}}<br>
+      </span>
     </div>
+  </body>
 
-</body>
-<script src="popupscript.js"></script>
-
+  <script src="popupscript.js"></script>
 </html>
